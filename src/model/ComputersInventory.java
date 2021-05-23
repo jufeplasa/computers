@@ -2,7 +2,7 @@ package model;
 
 public class ComputersInventory  {
 
-	public static final int MAXPC=20;
+	public static final int MAXPC=2;
 
 	//relations
 	Computer[] computers;
@@ -176,5 +176,35 @@ public class ComputersInventory  {
 		}
 	}
 
+	public String mostrarPromedioMemoria() {
+		String message="";
+		int totalPcs=0;
+		double totalMemory=0;
+		double promedio=0;
+		for(int i=0;i<MAXPC;i++) {
+			if (computers[i]!=null) {
+				totalPcs++;
+				totalMemory+=computers[i].getRam();	
+			}
+		}
+		if(totalPcs>0) {
+			promedio=totalMemory/totalPcs;
+			message="El promedio de la memoria es : "+promedio;
+		}
+		else {
+			message="No hay computadores registrados";
+		}
+		return message;
+	}
+	
+	public String mostrarInfoPc() {
+		String message="";
+		for(int i=0;i<MAXPC;i++) {
+			if(computers[i]!=null) {
+				message+=computers[i].toString();
+			}
+		}
+		return message;
+	}
 }
 

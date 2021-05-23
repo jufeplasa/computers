@@ -44,7 +44,13 @@ public class DesktopComputer extends Computer implements Operable{
 	
 	public String toString() {
 		String message="";
-		message=super.toString()+" "+accesories+", "+memoryShare;
+		message=super.toString()+", sus accesos son: "+accesories+", y su memoria compartida de "+memoryShare+"\n";
 		return message;
+	}
+	
+	public double getRam() {
+		double total=0;
+		total+=memoryShare + super.getRam();
+		return total;
 	}
 }

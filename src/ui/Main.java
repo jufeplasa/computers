@@ -79,7 +79,7 @@ public class Main {
 						System.out.println("El computador se ha eliminado con exito");
 					}
 					else {
-						System.out.println("El computador no se ha logrado eliminadar");
+						System.out.println("El computador no se ha logrado eliminar");
 					}
 				break;
 					
@@ -111,9 +111,13 @@ public class Main {
 				break;
 					
 				case 6:
+					message=planet.mostrarPromedioMemoria();
+					System.out.println(message);
 				break;
 				
 				case 7:
+					message=planet.mostrarInfoPc();
+					System.out.println(message);
 				break;	
 				
 				case 8: b=1;

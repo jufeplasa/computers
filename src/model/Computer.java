@@ -18,7 +18,7 @@ public class Computer {
 	}
 	
 	public String toString() {
-		String message="It ip is: "+ipAddress+", the reference is "+reference+" and it brand is: "+brand;
+		String message="Su ip es: "+ipAddress+", la referencia es: "+reference+", su marca es: "+brand+", su ram es de: "+ram;
 		return message;
 	}
 
@@ -54,7 +54,7 @@ public class Computer {
 		this.turnOn = turnOn;
 	}
 
-	public double getRam() {
+	public double getRam(){
 		return ram;
 	}
 

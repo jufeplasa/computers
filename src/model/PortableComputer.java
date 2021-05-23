@@ -19,7 +19,7 @@ public class PortableComputer extends Computer {
 	
 	public String toString() {
 		String message="";
-		message=super.toString()+" and the size is: "+size;
+		message=super.toString()+" y su tamaño es: "+size+"\n";
 		return message;
 	}
 	
